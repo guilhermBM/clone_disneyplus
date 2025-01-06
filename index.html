@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
+    <section class="hero"> <!--Section 1-->
         <div class="hero__content">
             <h1 class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
@@ -25,12 +25,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text">R$ 55,90/mês*</span>
                 </li>
             </ul>
@@ -38,6 +38,115 @@
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
             </p>
         </div>
-    </section>
+    </section> <!--Section 1 final-->
+
+    <section class="shows"> <!--Section 2-->
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                Em Breve
+            </button>
+            <button data-tab-button="mais_populares" class="shows__tabs__button">
+                Mais Populares
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">
+                Mais no Star+
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active"> <!--em breve-->
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomen">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Santa Clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem limites com Chris Hemsworth">
+            </li>   
+        </ul> <!--em breve-->
+        <ul data-tab-id="mais_populares" class="shows__list"> <!--mais populares-->
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleiro da Lua">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan Kenobi">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo Igual SQN">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O incrivel DR. Pol">
+            </li>   
+        </ul> <!--mais populares-->
+        <ul data-tab-id="star_plus" class="shows__list"> <!--satr plus-->
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+            </li>   
+        </ul> <!--star plus-->
+    </section> <!--Section 2 fim-->
+
+    <section class="plans"> <!--Section 3-->
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
+                <strong class="title--small">R$ 27,90/mês*</strong>
+                <p class="text--big">
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
+                <strong class="title--small">R$ 45,90/mês*</strong>
+                <p class="text--big">
+                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+                <strong class="title--small">R$ 55,90/mês*</strong>
+                <p class="text--big">
+                    Disney+, Star+, STARZPLAY em um plano especial. Assine agora os três serviços juntos.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+        </p>
+    </section> <!--Section 3 fim-->
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
